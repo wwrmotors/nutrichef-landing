@@ -40,11 +40,15 @@ document.querySelectorAll('.faq-item').forEach(item => {
   });
 });
 
-// CTA click tracking
+// CTA click tracking — Meta Pixel + Google
 document.querySelectorAll('a[href*="hotmart"]').forEach(btn => {
   btn.addEventListener('click', () => {
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'click_comprar', { event_category: 'CTA' });
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'InitiateCheckout', {
+        value: 9.00,
+        currency: 'USD',
+        content_name: 'NutriChef PRO'
+      });
     }
   });
 });
