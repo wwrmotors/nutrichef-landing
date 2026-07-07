@@ -9,59 +9,82 @@
   <meta property="og:description" content="120 recetas saludables · Chef IA con audio · $9 USD de por vida"/>
   <meta property="og:image" content="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&q=80"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
-  <!-- STICKY CTA -->
+  <!-- STICKY BAR -->
   <div class="sticky-bar">
     <span>🔥 Precio de lanzamiento — Solo por tiempo limitado</span>
-    <a href="https://pay.hotmart.com/D106615938W" class="btn-sticky" target="_blank">Comprar $9 USD →</a>
+    <a href="https://pay.hotmart.com/D106615938W" class="btn-sticky" target="_blank">Comprar $9 →</a>
   </div>
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=900&q=70" alt="" loading="eager" fetchpriority="high"/>
+    </div>
     <div class="container">
-      <div class="badge">🍃 NutriChef PRO</div>
-      <h1>¿Tienes PDFs de recetas<br/>que <span class="highlight">nunca usas?</span></h1>
-      <p class="hero-sub">Deja de guardar recetas que nunca cocinas. NutriChef es la app con <strong>120 recetas saludables</strong> y un <strong>chef virtual con audio</strong> que te guía paso a paso mientras cocinas.</p>
-      <a href="https://pay.hotmart.com/D106615938W" class="btn-primary" target="_blank">
+      <div class="hero-badge reveal">🍃 NutriChef PRO · App de cocina saludable</div>
+      <h1 class="reveal reveal-delay-1">¿Tienes PDFs de recetas<br/>que <span class="highlight">nunca usas?</span></h1>
+      <p class="hero-sub reveal reveal-delay-2">Deja de guardar recetas que nunca cocinas. NutriChef es la app con <strong>120 recetas saludables</strong> y un <strong>chef virtual con audio</strong> que te guía paso a paso.</p>
+      <a href="https://pay.hotmart.com/D106615938W" class="btn-primary reveal reveal-delay-3" target="_blank">
         🛒 Obtener Acceso — $9 USD
-        <span class="btn-sub">Acceso de por vida · Sin mensualidad</span>
+        <span class="btn-sub">Acceso de por vida · Sin mensualidad · Pago único</span>
       </a>
-      <div class="hero-proof">
+      <div class="hero-proof reveal reveal-delay-3">
         <span>⭐⭐⭐⭐⭐</span>
         <span>+500 personas cocinando saludable</span>
       </div>
     </div>
-    <div class="hero-img">
-      <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80" alt="Comida saludable" loading="lazy"/>
-      <div class="hero-img-overlay"></div>
-    </div>
   </section>
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="container">
+      <div class="stats-inner reveal">
+        <div class="stat-item">
+          <div class="stat-num" data-target="120">0</div>
+          <div class="stat-label">Recetas</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="6">0</div>
+          <div class="stat-label">Categorías</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-suffix="+">500</div>
+          <div class="stat-label">Usuarios</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-prefix="$">9</div>
+          <div class="stat-label">De por vida</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- PROBLEMA -->
   <section class="problem">
     <div class="container">
-      <div class="section-tag">😩 El Problema</div>
-      <h2>¿Te suena familiar?</h2>
+      <div class="section-tag reveal">😩 El Problema</div>
+      <h2 class="reveal">¿Te suena familiar?</h2>
       <div class="pain-grid">
-        <div class="pain-card">
+        <div class="pain-card reveal">
           <span class="pain-icon">📄</span>
           <p>Tienes decenas de PDFs de recetas guardados que <strong>nunca has cocinado</strong></p>
         </div>
-        <div class="pain-card">
+        <div class="pain-card reveal reveal-delay-1">
           <span class="pain-icon">😵</span>
-          <p>Buscas recetas en Google y son <strong>complicadísimas</strong> o necesitan ingredientes raros</p>
+          <p>Buscas en Google y las recetas son <strong>complicadísimas</strong> con ingredientes raros</p>
         </div>
-        <div class="pain-card">
+        <div class="pain-card reveal reveal-delay-2">
           <span class="pain-icon">⏱️</span>
-          <p>Empiezas a cocinar y a la mitad <strong>no sabes qué sigue</strong> — y terminas pidiendo domicilio</p>
+          <p>A la mitad de cocinar <strong>no sabes qué sigue</strong> y terminas pidiendo domicilio</p>
         </div>
-        <div class="pain-card">
+        <div class="pain-card reveal reveal-delay-3">
           <span class="pain-icon">🍔</span>
-          <p>Quieres comer saludable pero <strong>sin motivación ni guía</strong> siempre vuelves a lo mismo</p>
+          <p>Quieres comer saludable pero <strong>sin guía ni motivación</strong> siempre vuelves a lo mismo</p>
         </div>
       </div>
     </div>
@@ -70,25 +93,24 @@
   <!-- SOLUCIÓN -->
   <section class="solution">
     <div class="container">
-      <div class="section-tag">✅ La Solución</div>
-      <h2>Conoce <span class="highlight">NutriChef</span></h2>
-      <p class="section-sub">La app que tiene todo lo que necesitas para cocinar saludable de verdad — con un chef virtual que te habla mientras cocinas.</p>
-      <div class="app-screenshots">
-        <div class="screenshot-card main">
-          <div class="phone-frame">
-            <div class="phone-header">
-              <span class="phone-logo">🍃 NutriChef PRO</span>
-              <span class="phone-pts">20 pts</span>
-            </div>
-            <div class="phone-title">¿Qué cocinamos hoy?</div>
-            <div class="phone-grid">
-              <div class="phone-cat keto">🥑<br/><span>Keto</span></div>
-              <div class="phone-cat sal">🥗<br/><span>Saludables</span></div>
-              <div class="phone-cat hig">🫐<br/><span>Hígado</span></div>
-              <div class="phone-cat pas">🍓<br/><span>Pastelería</span></div>
-              <div class="phone-cat dia">💙<br/><span>Diabéticos</span></div>
-              <div class="phone-cat smo">🥤<br/><span>Smoothies</span></div>
-            </div>
+      <div class="section-tag reveal">✅ La Solución</div>
+      <h2 class="reveal">Conoce <span class="highlight">NutriChef</span></h2>
+      <p class="section-sub reveal">La app que tiene todo lo que necesitas para cocinar saludable de verdad — con un chef virtual que te habla mientras cocinas.</p>
+      <div class="phone-wrapper reveal">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-header">
+            <span class="phone-logo">🍃 NutriChef PRO</span>
+            <span class="phone-pts">⭐ 20 pts</span>
+          </div>
+          <div class="phone-title">¿Qué cocinamos hoy?</div>
+          <div class="phone-grid">
+            <div class="phone-cat keto">🥑<span>Keto</span></div>
+            <div class="phone-cat sal">🥗<span>Saludables</span></div>
+            <div class="phone-cat hig">🫐<span>Hígado</span></div>
+            <div class="phone-cat pas">🍓<span>Pastelería</span></div>
+            <div class="phone-cat dia">💙<span>Diabéticos</span></div>
+            <div class="phone-cat smo">🥤<span>Smoothies</span></div>
           </div>
         </div>
       </div>
@@ -98,38 +120,38 @@
   <!-- FEATURES -->
   <section class="features">
     <div class="container">
-      <div class="section-tag">⚡ Lo que incluye</div>
-      <h2>Todo lo que necesitas<br/>en <span class="highlight">una sola app</span></h2>
+      <div class="section-tag reveal">⚡ Lo que incluye</div>
+      <h2 class="reveal">Todo lo que necesitas<br/>en <span class="highlight">una sola app</span></h2>
       <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">👨‍🍳</div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">👨‍🍳</span>
           <h3>Chef Virtual con Audio</h3>
           <p>Un chef IA te habla paso a paso mientras cocinas. Como tener un chef personal en tu cocina.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">📚</div>
+        <div class="feature-card reveal reveal-delay-1">
+          <span class="feature-icon">📚</span>
           <h3>120 Recetas Organizadas</h3>
-          <p>Keto, Saludables, Hígado Graso, Pastelería, Diabéticos y Smoothies. Todo en un solo lugar.</p>
+          <p>Keto, Saludables, Hígado, Pastelería, Diabéticos y Smoothies. Todo en un solo lugar.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">⏱️</div>
+        <div class="feature-card reveal reveal-delay-2">
+          <span class="feature-icon">⏱️</span>
           <h3>Temporizador Integrado</h3>
           <p>Cada paso tiene su temporizador. Nunca más se te quema la comida ni te pasas del tiempo.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">🏆</div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">🏆</span>
           <h3>Sistema de Puntos</h3>
           <p>Gana puntos cada vez que cocinas. Desbloquea logros y ve tu evolución semana a semana.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">📱</div>
+        <div class="feature-card reveal reveal-delay-1">
+          <span class="feature-icon">📱</span>
           <h3>100% desde tu Celular</h3>
           <p>Funciona en cualquier celular, sin descargas. Abre el link y listo — ya puedes cocinar.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">♾️</div>
+        <div class="feature-card reveal reveal-delay-2">
+          <span class="feature-icon">♾️</span>
           <h3>Acceso de Por Vida</h3>
-          <p>Pagas una sola vez y es tuyo para siempre. Todas las actualizaciones futuras incluidas.</p>
+          <p>Pagas una sola vez y es tuyo para siempre. Todas las actualizaciones incluidas.</p>
         </div>
       </div>
     </div>
@@ -138,40 +160,40 @@
   <!-- CATEGORÍAS -->
   <section class="categories">
     <div class="container">
-      <div class="section-tag">🍽️ Categorías</div>
-      <h2>6 categorías para<br/><span class="highlight">cada objetivo</span></h2>
+      <div class="section-tag reveal">🍽️ Categorías</div>
+      <h2 class="reveal">6 categorías para<br/><span class="highlight">cada objetivo</span></h2>
       <div class="cats-grid">
-        <div class="cat-card" style="border-color:#22c55e">
+        <div class="cat-card reveal" style="border-color:rgba(132,204,22,0.3)">
           <span class="cat-emoji">🥑</span>
           <h4>Keto</h4>
           <p>Alto en grasas, bajo en carbos</p>
           <span class="cat-count">20 recetas</span>
         </div>
-        <div class="cat-card" style="border-color:#3b82f6">
+        <div class="cat-card reveal reveal-delay-1" style="border-color:rgba(96,165,250,0.3)">
           <span class="cat-emoji">🥗</span>
           <h4>Saludables</h4>
           <p>Nutrición balanceada y deliciosa</p>
           <span class="cat-count">20 recetas</span>
         </div>
-        <div class="cat-card" style="border-color:#8b5cf6">
+        <div class="cat-card reveal reveal-delay-2" style="border-color:rgba(167,139,250,0.3)">
           <span class="cat-emoji">🫐</span>
           <h4>Hígado Graso</h4>
           <p>Recetas desinflamatorias</p>
           <span class="cat-count">20 recetas</span>
         </div>
-        <div class="cat-card" style="border-color:#ef4444">
+        <div class="cat-card reveal" style="border-color:rgba(248,113,113,0.3)">
           <span class="cat-emoji">🍓</span>
           <h4>Pastelería Saludable</h4>
           <p>Dulces sin culpa</p>
           <span class="cat-count">20 recetas</span>
         </div>
-        <div class="cat-card" style="border-color:#06b6d4">
+        <div class="cat-card reveal reveal-delay-1" style="border-color:rgba(56,189,248,0.3)">
           <span class="cat-emoji">💙</span>
           <h4>Diabéticos</h4>
           <p>Bajo índice glucémico</p>
           <span class="cat-count">20 recetas</span>
         </div>
-        <div class="cat-card" style="border-color:#f97316">
+        <div class="cat-card reveal reveal-delay-2" style="border-color:rgba(251,146,60,0.3)">
           <span class="cat-emoji">🥤</span>
           <h4>Smoothies y Jugos</h4>
           <p>Energía líquida y vital</p>
@@ -184,10 +206,10 @@
   <!-- VS SECTION -->
   <section class="vs-section">
     <div class="container">
-      <div class="section-tag">⚖️ La Diferencia</div>
-      <h2>PDFs vs <span class="highlight">NutriChef</span></h2>
+      <div class="section-tag reveal">⚖️ La Diferencia</div>
+      <h2 class="reveal">PDFs vs <span class="highlight">NutriChef</span></h2>
       <div class="vs-grid">
-        <div class="vs-card bad">
+        <div class="vs-card bad reveal">
           <h3>❌ PDFs de recetas</h3>
           <ul>
             <li>Sin guía paso a paso</li>
@@ -197,9 +219,9 @@
             <li>Sin motivación ni progreso</li>
             <li>Terminas sin cocinar nada</li>
           </ul>
-          <div class="vs-price bad-price">GRATIS<br/><small>pero nunca lo usas 😩</small></div>
+          <div class="vs-price bad-price">GRATIS<small>pero nunca lo usas 😩</small></div>
         </div>
-        <div class="vs-card good">
+        <div class="vs-card good reveal reveal-delay-2">
           <h3>✅ NutriChef PRO</h3>
           <ul>
             <li>Chef IA te guía con audio</li>
@@ -209,7 +231,50 @@
             <li>6 categorías de salud</li>
             <li>Cocinas de verdad 🎉</li>
           </ul>
-          <div class="vs-price good-price">$9 USD<br/><small>acceso de por vida ✨</small></div>
+          <div class="vs-price good-price">$9 USD<small>acceso de por vida ✨</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-tag reveal">💬 Testimonios</div>
+      <h2 class="reveal">Lo que dicen<br/><span class="highlight">nuestros usuarios</span></h2>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testi-text">"Llevaba meses con PDFs que nunca abría. Con NutriChef cociné mi primera receta keto en 20 minutos. El chef con audio lo hace todo más fácil."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👩</div>
+            <div>
+              <div class="testi-name">María C.</div>
+              <div class="testi-loc">Bogotá, Colombia</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-1">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testi-text">"Soy diabético y por fin tengo recetas diseñadas para mí. El temporizador es un salvavidas. Nunca más se me pasa la cocción."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👨</div>
+            <div>
+              <div class="testi-name">Carlos R.</div>
+              <div class="testi-loc">Medellín, Colombia</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-2">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testi-text">"$9 dólares los mejor invertidos de mi vida. Ya llevo 3 semanas cocinando saludable todos los días. ¡Perdí 4 kilos!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👩‍🦱</div>
+            <div>
+              <div class="testi-name">Valentina M.</div>
+              <div class="testi-loc">Cali, Colombia</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -218,9 +283,9 @@
   <!-- PRECIO -->
   <section class="pricing">
     <div class="container">
-      <div class="section-tag">💰 Precio</div>
-      <h2>Inversión única.<br/><span class="highlight">Beneficio de por vida.</span></h2>
-      <div class="price-card">
+      <div class="section-tag reveal">💰 Precio</div>
+      <h2 class="reveal">Inversión única.<br/><span class="highlight">Beneficio de por vida.</span></h2>
+      <div class="price-card reveal">
         <div class="price-badge">🔥 Precio de Lanzamiento</div>
         <div class="price-old">Valor real: $47 USD</div>
         <div class="price-main">$9 <span>USD</span></div>
@@ -240,7 +305,7 @@
           <span class="btn-sub">Serás redirigido al checkout seguro de Hotmart</span>
         </a>
         <div class="price-secure">
-          🔒 Pago 100% seguro · 30 días de garantía
+          🔒 Pago 100% seguro · 30 días de garantía sin preguntas
         </div>
       </div>
     </div>
@@ -249,10 +314,10 @@
   <!-- GARANTÍA -->
   <section class="guarantee">
     <div class="container">
-      <div class="guarantee-card">
-        <div class="guarantee-icon">🛡️</div>
+      <div class="guarantee-card reveal">
+        <span class="guarantee-icon">🛡️</span>
         <h3>Garantía de 30 días</h3>
-        <p>Si en los próximos 30 días no quedas satisfecho, te devolvemos el dinero sin preguntas. Cero riesgo para ti.</p>
+        <p>Si en los próximos 30 días no quedas satisfecho, te devolvemos el dinero sin preguntas. Cero riesgo para ti. Pruébalo con total confianza.</p>
       </div>
     </div>
   </section>
@@ -260,28 +325,28 @@
   <!-- FAQ -->
   <section class="faq">
     <div class="container">
-      <div class="section-tag">❓ Preguntas Frecuentes</div>
-      <h2>Resolvemos tus dudas</h2>
+      <div class="section-tag reveal">❓ Dudas Frecuentes</div>
+      <h2 class="reveal">Resolvemos tus dudas</h2>
       <div class="faq-list">
-        <div class="faq-item">
+        <div class="faq-item reveal">
           <div class="faq-q">¿Necesito descargar una app?</div>
-          <div class="faq-a">No. NutriChef funciona directo desde el navegador de tu celular. Solo abres el link y listo.</div>
+          <div class="faq-a">No. NutriChef funciona directo desde el navegador de tu celular. Solo abres el link y listo — sin descargas, sin instalaciones.</div>
         </div>
-        <div class="faq-item">
+        <div class="faq-item reveal">
           <div class="faq-q">¿Qué significa acceso de por vida?</div>
           <div class="faq-a">Pagas una sola vez y tienes acceso para siempre. Sin mensualidades, sin cobros adicionales. Todas las actualizaciones futuras también están incluidas.</div>
         </div>
-        <div class="faq-item">
-          <div class="faq-q">¿Funciona para diabéticos o personas con restricciones?</div>
-          <div class="faq-a">Sí. Tenemos una categoría completa de 20 recetas especialmente diseñadas para diabéticos con bajo índice glucémico.</div>
+        <div class="faq-item reveal">
+          <div class="faq-q">¿Funciona para diabéticos o con restricciones alimenticias?</div>
+          <div class="faq-a">Sí. Tenemos una categoría completa de 20 recetas especialmente diseñadas para diabéticos con bajo índice glucémico. También tenemos recetas para hígado graso.</div>
         </div>
-        <div class="faq-item">
+        <div class="faq-item reveal">
           <div class="faq-q">¿Cómo accedo después de pagar?</div>
-          <div class="faq-a">Al pagar recibes un email con tu acceso. Entras con tu email a nutrichef2.vercel.app y listo — ya puedes cocinar.</div>
+          <div class="faq-a">Al pagar recibes un email con tu acceso. Entras con ese email a la app y listo — ya puedes cocinar. El proceso toma menos de 2 minutos.</div>
         </div>
-        <div class="faq-item">
+        <div class="faq-item reveal">
           <div class="faq-q">¿En qué países está disponible?</div>
-          <div class="faq-a">En todos los países de habla hispana — Colombia, México, Argentina, Chile, Perú, España y más.</div>
+          <div class="faq-a">En todos los países de habla hispana — Colombia, México, Argentina, Chile, Perú, España y más. El pago se procesa en dólares USD.</div>
         </div>
       </div>
     </div>
@@ -290,11 +355,11 @@
   <!-- FINAL CTA -->
   <section class="final-cta">
     <div class="container">
-      <h2>Deja de guardar recetas.<br/><span class="highlight">Empieza a cocinar.</span></h2>
-      <p>120 recetas · Chef IA · Acceso de por vida · $9 USD</p>
-      <a href="https://pay.hotmart.com/D106615938W" class="btn-primary big" target="_blank">
+      <h2 class="reveal">Deja de guardar recetas.<br/><span class="highlight">Empieza a cocinar.</span></h2>
+      <p class="reveal">120 recetas · Chef IA · Acceso de por vida · Solo $9 USD</p>
+      <a href="https://pay.hotmart.com/D106615938W" class="btn-primary big reveal reveal-delay-1" target="_blank">
         🛒 Obtener Acceso Ahora — $9 USD
-        <span class="btn-sub">30 días de garantía · Pago seguro</span>
+        <span class="btn-sub">30 días de garantía · Pago seguro · Acceso inmediato</span>
       </a>
     </div>
   </section>
