@@ -40,15 +40,28 @@ document.querySelectorAll('.faq-item').forEach(item => {
   });
 });
 
-// CTA click tracking — Meta Pixel + Google
+// Enviar evento a Meta Conversions API (servidor)
+function sendMetaEvent(eventName) {
+  fetch('/api/meta-event', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      event_name: eventName,
+      client_user_agent: navigator.userAgent,
+      event_source_url: window.location.href,
+    }),
+  }).catch(() => {});
+}
+
+// Al cargar la página — PageView
+sendMetaEvent('PageView');
+
+// CTA click — InitiateCheckout via Pixel + API servidor
 document.querySelectorAll('a[href*="hotmart"]').forEach(btn => {
   btn.addEventListener('click', () => {
     if (typeof fbq !== 'undefined') {
-      fbq('track', 'InitiateCheckout', {
-        value: 9.00,
-        currency: 'USD',
-        content_name: 'NutriChef PRO'
-      });
+      fbq('track', 'InitiateCheckout', { value: 9.00, currency: 'USD' });
     }
+    sendMetaEvent('InitiateCheckout');
   });
 });
